@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería del Negocio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('img/fondofood2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1,h2{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        #nav {
+            background-color: rgba(34, 34, 34, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="catalogo.html" class="nav-link">Nuestros productos</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+    <h1>Galería de Nuestro Negocio</h1>
+    <div class="gallery">
+        <div class="menu-item">
+        <img src="img/cocina.jpg" alt="Descripción de la imagen 1">
+        <h2>Área de cocina</h2>
+        </div>
+        <div class="menu-item">
+        <img src="img/comedor.jpg" alt="Descripción de la imagen 2">
+        <h2>Área de comedor</h2>
+        </div>
+        <div class="menu-item">
+        <img src="img/estacionamiento.jfif" alt="Descripción de la imagen 3">
+        <h2>Área de estacionamiento</h2>
+        </div>
+        <div class="menu-item">
+        <img src="img/juegos.jpg" alt="Descripción de la imagen 4">
+        <h2>Área de juegos</h2>
+        </div>
+        <div>
+        <img src="img/bañoss.jpg" alt="Descripción de la imagen 5">
+        <h2>Área de baños</h2>
+        </div>
+        <div>
+        <img src="img/autoservicio.jfif" alt="Descripción de la imagen 6">
+        <h2>Área de autoservicio<h/2>
+    </div>
+    </div>
+</body>
+</html>

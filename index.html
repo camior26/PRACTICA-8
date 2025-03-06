@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: url('img/fondofood2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        
+        #header {
+            background-color: rgba(224, 230, 173, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        #logo {
+            max-width: 200px;
+        }
+        #nav {
+            background-color: rgba(34, 34, 34, 0.8);
+            padding: 10px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        #content {
+            background-color: rgba(175, 76, 76, 0.9);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #footer {
+            background-color: rgba(20, 20, 20, 0.9);
+            padding: 50px;
+            position:static;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="img/logopizz.jpg" alt="Logo pizza" id="logo">
+    </div>
+    <nav id="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="catalogo.html" class="nav-link">Nuestros productos</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+    <div id="content">
+        <img src="img/pepperoni.gif" alt="pizza pepperoni">
+        <p>Visítanos y disfruta del mejor sabor</p>
+        <p>Contamos con los mejores sabores</p>
+    </div>
+    <div id="footer">
+        &copy; 2025 Pizza. Todos los derechos reservados.
+    </div>
+</body>
+</html>
